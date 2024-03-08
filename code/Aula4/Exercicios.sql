@@ -226,4 +226,4 @@ SELECT * FROM atleta WHERE equipe_id = 1;
 -- Conte quantas equipes existem em cada clube.
 SELECT clube.nome, COUNT(equipe.id) AS numero_de_equipes FROM clube
 -- Selecione clubes que possuem equipes em mais de um tipo de esporte.
-SELECT clube.nome FROM clube WHERE (SELECT COUNT(DISTINCT equipe.tipo_esporte) FROM equipe WHERE equipe.clube_id = clube.id) > 1;
+SELECT clube.nome FROM clube WHERE (SELECT COUNT(DISTINCT equipe.tipo_esporte) FROM equipe WHERE equipe.clube_id = clube.id) > 1; 1;
